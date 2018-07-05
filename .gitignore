@@ -1,5 +1,6 @@
 /data/certs
 /data/htpasswd
+/data/conf.d
 .env*
 !.env.sample
 
