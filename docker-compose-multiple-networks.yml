@@ -15,6 +15,7 @@ services:
       - ${NGINX_FILES_PATH:-./data}/html:/usr/share/nginx/html
       - ${NGINX_FILES_PATH:-./data}/certs:/etc/nginx/certs:ro
       - ${NGINX_FILES_PATH:-./data}/htpasswd:/etc/nginx/htpasswd:ro
+      - ${NGINX_FILES_PATH:-./data}/cache:/var/cache/nginx/
     networks:
       - default
       - outside
