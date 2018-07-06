@@ -1,6 +1,7 @@
 /data/certs
 /data/htpasswd
-/data/conf.d
+/data/conf.d/default.conf
+/data/vhost.d/default
 .env*
 !.env.sample
 
