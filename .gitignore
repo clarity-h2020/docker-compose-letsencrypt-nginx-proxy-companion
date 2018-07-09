@@ -2,6 +2,7 @@
 /data/htpasswd
 /data/conf.d/default.conf
 /data/vhost.d/default
+/data/logs
 .env*
 !.env.sample
 
