@@ -1,1 +1,1 @@
-rewrite "^/$" /geoserver/web/ break;
+rewrite "^/$" /geoserver/web/ permanent;

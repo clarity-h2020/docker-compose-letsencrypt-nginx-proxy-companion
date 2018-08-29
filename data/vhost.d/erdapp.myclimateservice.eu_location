@@ -1,1 +1,1 @@
-rewrite "^/$" /erddap/index.html break;
+rewrite "^/$" /erddap/index.html permanent;
