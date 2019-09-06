@@ -30,3 +30,5 @@ fastcgi_param HTTPS on;
 add_header 'Access-Control-Allow-Origin' 'http://localhost:3000';
 add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
 add_header 'Access-Control-Allow-Credentials' 'true';
+
+client_max_body_size 100m;
