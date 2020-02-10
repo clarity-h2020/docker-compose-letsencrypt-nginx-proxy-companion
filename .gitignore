@@ -1,4 +1,9 @@
-data
+nginx-data/certs
+nginx-data/htpasswd
+nginx-data/conf.d
+nginx-data/html
+nginx-data/logs
+nginx-data/vhost.d/default
 .env*
 !.env.sample
 .DS_Store
