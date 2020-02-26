@@ -27,7 +27,18 @@ add_header 'Access-Control-Allow-Credentials' 'true';
 
 client_max_body_size 100m;
 
+# eea application
+# See https://github.com/clarity-h2020/docker-compose-letsencrypt-nginx-proxy-companion/issues/5#issuecomment-591327538
 location /vizql/ {
+	proxy_ssl_server_name on;
+	proxy_set_header Host tableau.discomap.eea.europa.eu;
+	proxy_pass https://tableau.discomap.eea.europa.eu;
+	proxy_set_header      X-NginX-Proxy    true;
+	add_header 'Access-Control-Allow-Origin' '*';
+}
+
+# eea application
+location /t/ {
 	proxy_ssl_server_name on;
 	proxy_set_header Host tableau.discomap.eea.europa.eu;
 	proxy_pass https://tableau.discomap.eea.europa.eu;
