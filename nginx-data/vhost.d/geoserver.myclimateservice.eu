@@ -41,3 +41,20 @@ gzip_types
 	application/xml
 	application/rss+xml
 	image/svg+xml;
+
+location /geoserver/ {
+        proxy_ssl_server_name on;
+        proxy_set_header Host clarity.meteogrid.com;
+        proxy_pass https://clarity.meteogrid.com;
+        proxy_set_header      X-NginX-Proxy    true;
+        add_header 'Access-Control-Allow-Origin' '*';
+}
+
+location /geoserver/clarity/ {
+        proxy_ssl_server_name on;
+        proxy_set_header Host services.clarity-h2020.eu;
+        proxy_pass http://services.clarity-h2020.eu:8080;
+        proxy_set_header      X-NginX-Proxy    true;
+        add_header 'Access-Control-Allow-Origin' '*';
+}
+
