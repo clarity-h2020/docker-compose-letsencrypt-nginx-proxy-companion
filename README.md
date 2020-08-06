@@ -43,7 +43,7 @@ The following myclimateservice.eu subdomains are currently in use:
 
 ## Usage
 
-See [How to use it)](#How-to-use-it).
+See [How to use it](#How-to-use-it).
 
 # About [evertramos/docker-compose-letsencrypt-nginx-proxy-companion](https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion) 
 
